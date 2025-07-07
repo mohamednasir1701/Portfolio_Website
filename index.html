@@ -102,28 +102,7 @@
           <p>Aws</p>
         </div>
       </div>
-    </section><section id="hero" data-aos="fade-up">
-  <div class="hero-center">
-    <div class="hero-content">
-      <h1 class="Nasir">Hi, I'm <span>Mohamed Nasir M E</span></h1>
-      <p class="nasir">Data Scientist In AI.</p>
-      <a href="#projects" class="btn">View Projects</a>
-
-      <div class="social-buttons">
-        <a href="https://www.linkedin.com/in/mohamed-nasir-m-e-ab714a227/" target="_blank" class="icon-box">
-          <img src="./assets/linkedin.svg" alt="LinkedIn" class="icon" />
-        </a>
-        <a href="https://github.com/mohamednasir1701/mohamednasir1701" target="_blank" class="icon-box">
-          <img src="./assets/github.svg" alt="GitHub" class="icon" />
-        </a>
-        <a href="https://wa.me/7353742721" target="_blank" class="icon-box">
-          <img src="./assets/whatsapp.svg" alt="WhatsApp" class="icon" />
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
   </li>
 <!--
   - Projects
@@ -187,7 +166,29 @@ such as attendance tracking, assignment management, and parent communication por
   </div>
 
   <button type="submit" class="submit-btn">Send Message</button>
+</form><form name="contact" method="POST" data-netlify="true" class="contact-form" onsubmit="handleSubmit(event)">
+  <input type="hidden" name="form-name" value="contact" />
+  <h2>Contact Me</h2>
+  <div class="input-group">
+    <input type="text" name="name" placeholder="Your Name" required />
+  </div>
+  <div class="input-group">
+    <input type="email" name="email" placeholder="Your Email" required />
+  </div>
+  <div class="input-group">
+    <input type="text" name="phone" placeholder="Phone (Optional)" />
+  </div>
+  <div class="input-group">
+    <textarea name="message" placeholder="Your Message" required></textarea>
+  </div>
+  <button type="submit" class="submit-btn">Send Message</button>
 </form>
+
+<!-- Thank you message container -->
+<div id="thank-you-message" style="display: none; text-align:center; padding-top: 20px; color: lightgreen; font-weight: bold;">
+  ✅ Thank you! Your message has been sent.
+</div>
+
 
     </section>
 
