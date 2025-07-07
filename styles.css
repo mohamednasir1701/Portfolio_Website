@@ -133,6 +133,73 @@ nav a:hover::after, nav a.active::after {
   transform: rotate(90deg);
 }
 
+#hero {
+  height: 100vh;
+  width: 100vw; /* Ensure full screen width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content .btn {
+  margin-bottom: 20px;
+}
+
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  gap: 50px;
+}
+
+#aboutdes {
+  flex: 1;
+  max-width: 60%;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.about-image-wrapper {
+  flex: 0 0 250px; /* Fix width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+
 /* Responsive Navigation */
 @media (max-width: 768px) {
   .navbar {
@@ -182,56 +249,6 @@ nav a:hover::after, nav a.active::after {
   }
 }
 
-/* Rest of your existing CSS remains the same */
-/* Hero Section */
-#hero {
-  text-align: center;
-  padding: 70px 120px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70vh;
-}
-
-#hero h1 {
-  font-size: 3rem;
-}
-
-#hero span {
-  color: #fc3d23;
-}
-
-/* About Section */
-#about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 40px 0;
-  gap: 50px;
-}
-
-#aboutdes {
-  flex: 1;
-  max-width: 60%;
-  text-align: justify;
-  line-height: 1.6;
-  letter-spacing: 0.6px;
-  line-height: 30px;
-}
-
-#aboutdes p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-.image {
-  width: 220px;
-  height: auto;
-  border-radius: 15px;
-}
 
 /* Buttons */
 .btn {
