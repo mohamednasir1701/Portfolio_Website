@@ -143,30 +143,7 @@ such as attendance tracking, assignment management, and parent communication por
           Fill out the form below and we'll get back to you as soon as possible.
         </p>
       </div>
-
-      <form name="contact" method="POST" data-netlify="true" class="contact-form">
-  <input type="hidden" name="form-name" value="contact" />
-
-  <h2>Contact Me</h2>
-
-  <div class="input-group">
-    <input type="text" name="name" placeholder="Your Name" required />
-  </div>
-
-  <div class="input-group">
-    <input type="email" name="email" placeholder="Your Email" required />
-  </div>
-
-  <div class="input-group">
-    <input type="text" name="phone" placeholder="Phone (Optional)" />
-  </div>
-
-  <div class="input-group">
-    <textarea name="message" placeholder="Your Message" required></textarea>
-  </div>
-
-  <button type="submit" class="submit-btn">Send Message</button>
-</form><form name="contact" method="POST" data-netlify="true" class="contact-form" onsubmit="handleSubmit(event)">
+<form name="contact" method="POST" data-netlify="true" class="contact-form" onsubmit="handleSubmit(event)">
   <input type="hidden" name="form-name" value="contact" />
   <h2>Contact Me</h2>
   <div class="input-group">
@@ -188,8 +165,6 @@ such as attendance tracking, assignment management, and parent communication por
 <div id="thank-you-message" style="display: none; text-align:center; padding-top: 20px; color: lightgreen; font-weight: bold;">
   ✅ Thank you! Your message has been sent.
 </div>
-
-
     </section>
 
     <script src="script.js"></script>
