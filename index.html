@@ -77,7 +77,6 @@
 <!--
   -skills
   -->
-        -->
 </li><section id="skills" data-aos="zoom-in">
       <h2>Skills</h2>
       <P> </P>
@@ -166,23 +165,23 @@ such as attendance tracking, assignment management, and parent communication por
         </p>
       </div>
 
-      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-        <input type="hidden" name="access_key" value="9498dda6-197e-44de-922f-0f258a5db6da">
-        <h2>Contact Me</h2>
-        <div class="input-group">
-          <input type="text" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="input-group">
-          <input type="email" name="email" placeholder="Your Email" required>
-        </div>
-        <div class="input-group">
-          <input type="text" name="phone" placeholder="Phone (Optional)">
-        </div>
-        <div class="input-group">
-          <textarea name="message" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
+      <form name="contact" method="POST" data-netlify="true" class="contact-form">
+        <input type="hidden" name="form-name" value="contact">  
+  <h2>Contact Me</h2>
+  <div class="input-group">
+    <input type="text" name="name" placeholder="Your Name" required>
+  </div>
+  <div class="input-group">
+    <input type="email" name="email" placeholder="Your Email" required>
+  </div>
+  <div class="input-group">
+    <input type="text" name="phone" placeholder="Phone (Optional)">
+  </div>
+  <div class="input-group">
+    <textarea name="message" placeholder="Your Message" required></textarea>
+  </div>
+  <button type="submit" class="submit-btn">Send Message</button>
+</form>
     </section>
 
     <script src="script.js"></script>
