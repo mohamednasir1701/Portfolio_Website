@@ -480,6 +480,49 @@ h1 {
   box-shadow: 0 6px 20px rgba(255, 83, 83, 0.5);
 }
 
+
+/* Footer */
+.site-footer {
+  background: rgba(15, 15, 15, 0.9);
+  color: #ccc;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+}
+
+.site-footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icon {
+  width: 25px;
+  height: 25px;
+  opacity: 0.8;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.dark-mode .site-footer {
+  background: #f0f0f0;
+  color: #222;
+  border-top: 1px solid #aaa;
+}
+
+
 /* Mobile Layout Overhaul */
 @media (max-width: 768px) {
   /* Base Typography Fixes */
@@ -589,4 +632,15 @@ h1 {
   h2 {
     font-size: 1.5rem;
   }
+
+  .site-footer {
+    font-size: 13px;
+    padding: 25px 15px;
+  }
+
+  .footer-icon {
+    width: 22px;
+    height: 22px;
+  }
+  
 }
